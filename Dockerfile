@@ -1,5 +1,5 @@
 # */
-FROM centos:centos6.6
+FROM centos:centos6.9
 
 MAINTAINER wujian@wujian360.cn "Please don't change yourself"
 
