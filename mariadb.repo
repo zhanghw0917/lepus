@@ -1,5 +1,5 @@
 [mariadb]
-name=mariadb
-gpgcheck=0
-enabled=1
-baseurl=http://mirrors.ustc.edu.cn/mariadb/yum/10.2/centos6-amd64/
+name=MariaDB
+baseurl=http://yum.mariadb.org/10.0/centos6-amd64
+gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+gpgcheck=1
