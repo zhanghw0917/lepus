@@ -2,4 +2,4 @@
 name=mariadb
 gpgcheck=0
 enabled=1
-baseurl=http://sfo1.mirrors.digitalocean.com/mariadb/mariadb-10.0.19/yum/centos6-amd64/
+baseurl=http://mirrors.ustc.edu.cn/mariadb/yum/10.2/centos6-amd64/
