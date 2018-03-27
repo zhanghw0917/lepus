@@ -5,7 +5,7 @@ MAINTAINER wujian@wujian360.cn "Please don't change yourself"
 
 COPY mariadb.repo /etc/yum.repos.d/mariadb.repo
 
-RUN yum install -y httpd php php-mysql gcc libffi-devel python-devel openssl-devel mariadb mariadb-devel unzip net-snmp* && yum clean all && rm -rf /var/lib/mysql
+RUN yum install -y httpd php php-mysql gcc libffi-devel python-devel python-setuptools openssl-devel mariadb mariadb-devel unzip net-snmp* && yum clean all && rm -rf /var/lib/mysql
 
 COPY lepus /lepus
 
