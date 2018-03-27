@@ -1,33 +1,11 @@
-#/**
-# *
-# * ━━━━━━神兽出没━━━━━━
-# * 　　　┏┓　　　┏┓
-# * 　　┏┛┻━━━┛┻┓
-# * 　　┃　　　　　　　┃
-# * 　　┃　　　━　　　┃
-# * 　　┃　┳┛　┗┳　┃
-# * 　　┃　　　　　　　┃
-# * 　　┃　　　┻　　　┃
-# * 　　┃　　　　　　　┃
-# * 　　┗━┓　　　┏━┛Code is far away from bug with the animal protecting
-# * 　　　　┃　　　┃    神兽保佑,代码无bug
-# * 　　　　┃　　　┃
-# * 　　　　┃　　　┗━━━┓
-# * 　　　　┃　　　　　　　┣┓
-# * 　　　　┃　　　　　　　┏┛
-# * 　　　　┗┓┓┏━┳┓┏┛
-# * 　　　　　┃┫┫　┃┫┫
-# * 　　　　　┗┻┛　┗┻┛
-# *
-# * ━━━━━━感觉萌萌哒━━━━━━
 # */
-FROM index.alauda.cn/library/centos:6.6
+FROM centos:centos6.6
 
 MAINTAINER wujian@wujian360.cn "Please don't change yourself"
 
 COPY mariadb.repo /etc/yum.repos.d/mariadb.repo
 
-RUN yum install -y httpd php php-mysql gcc libffi-devel python-devel openssl-devel MariaDB MariaDB-devel unzip net-snmp* && yum clean all && rm -rf /var/lib/mysql
+RUN yum install -y httpd php php-mysql gcc libffi-devel python-devel openssl-devel mariadb mariadb-devel unzip net-snmp* && yum clean all && rm -rf /var/lib/mysql
 
 COPY lepus /lepus
 
